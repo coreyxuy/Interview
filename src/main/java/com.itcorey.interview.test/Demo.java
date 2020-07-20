@@ -18,7 +18,13 @@ public class Demo {
     static class MyThread implements Runnable {
         @Override
         public void run() {
-            System.out.println("=====" + Thread.currentThread().getName());
+            try {
+                Thread.sleep(20000);
+                System.out.println("=====" + Thread.currentThread().getName());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 }
