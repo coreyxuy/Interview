@@ -1,4 +1,4 @@
-package lock;
+package com.itcorey.interview.lock;
 
 /**
  * @Auther: corey
@@ -15,7 +15,7 @@ public class sync {
             synchronized (a) {
                 System.out.println(Thread.currentThread().getName()+"我获取到了 a");
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(200000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

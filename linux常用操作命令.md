@@ -33,8 +33,7 @@
 
 
 
-#### 2.系统常用命令  
-
+#### 2.系统常用命令
     1.top
         top                     展示系统中耗费资源，最多的进程
     2.date
@@ -66,10 +65,11 @@
         halt                    关机后关闭电源
     13.reboot
         reboot                  重新启动，相当于shutdown -f
-        
+    14.jps -l                   
+        jps -l                  查看Java项目的进程   
    
 #### 3.压缩和解压
-    
+   
     1.gzip 
         gzip 1.txt              压缩后面文件和文件夹
         gzip -d 1.txt           解压后面的压缩文件
