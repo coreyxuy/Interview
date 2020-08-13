@@ -15,7 +15,7 @@ public class sync {
             synchronized (a) {
                 System.out.println(Thread.currentThread().getName()+"我获取到了 a");
                 try {
-                    Thread.sleep(200000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
