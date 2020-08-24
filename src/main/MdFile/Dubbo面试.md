@@ -100,7 +100,26 @@
                Dubbo的扩展机制能很好的支持第三方IoC容器，默认支持Spring Bean。
                
      
+### 17.Dubbo支持哪些序列化方式？
+    dubbo支持hession，Java 二进制序列化，json，SOAP 默认序列化协议
     
+
+### 18. Dubbo和SpringCloud的关系？
+    dubbo 是基于 dubbo协议
+    而springcloud是基于 http协议的
+    本质上其实不存在对比性
+
+### 19.Dubbo的主要应用场景？
+    1:Rpc 分布式分布式服务
+    2：配置管理
+    3：服务依赖
+    4：服务扩容
+    
+### 20.服务调用超时问题怎么解决？
+     dubbo reference 设置timeout 超时时间
+
+    
+      
     
 
     
