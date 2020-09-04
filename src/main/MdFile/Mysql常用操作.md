@@ -1,9 +1,35 @@
-/**关键字**/
-1.GROUP_CONCAT 函数介绍;
-group_concat([DISTINCT] 要连接的字段 [Order BY ASC/DESC 排序字段] [Separator '分隔符'])
+# mysql
+### 1.链接mysql命令
+    mysql -u root -p
+    输入密码
 
-2.DISTINCT函数用法
-在表中，可能会包含重复值。这并不成问题，不过，有时您也许希望仅仅列出不同（distinct）的值。
-关键词 DISTINCT 用于返回唯一不同的值。
-SELECT DISTINCT 列名称 FROM 表名称
+### 2.什么是长链接，什么是短链接？
+    数据库里，长链接是连接成功，如果客户端持续有请求，则一直使用这个链接
+    数据库里，短链接是次执行完很少的几次查询就断开连接，下次查询重新建立一个
 
+### 3.为什么大多情况下，都不建议查询缓存？
+    1.查询缓存的失效率非常频繁，只要有一个表更新，这个表上的缓存就要被更新清空
+    2.对于更新压力大的数据库来说，查询缓存的命中率会非常低
+    3.除非你的业务就是一张静态表，很长时间才会更新一次（如：系统配置表）
+    不查询缓存的方式：
+        query_cache_type 设置成 DEMAND
+    确定需要查询缓存的语句
+        select SQL_CACHE * from T where ID=10；
+    
+### 4.GROUP_CONCAT 函数介绍;
+    group_concat([DISTINCT] 要连接的字段 [Order BY ASC/DESC 排序字段] [Separator '分隔符'])
+
+### 5.DISTINCT函数用法
+    在表中，可能会包含重复值。这并不成问题，不过，有时您也许希望仅仅列出不同（distinct）的值。
+    关键词 DISTINCT 用于返回唯一不同的值。
+    SELECT DISTINCT 列名称 FROM 表名称
+    
+### 6.描述下MySQL的架构体系？
+
+### 7.MySQL的常用存储引擎及他们之间的区别？
+
+### 8.MySQL索引的实现机制是什么，为什么要使用B+树？
+
+### 9.MySQL中的事务实现原理？
+
+### 10.MySQL有哪些常用的优化策略？

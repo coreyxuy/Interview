@@ -155,8 +155,8 @@ public class HttpClientOp {
         for (int i = 0; i < 800; i++) {
             String s = null;
             try {
-                Thread.sleep(5000);
-                s = HttpClientOp.doGet("https://blog.csdn.net/CoreyXuu/article/details/108143021");
+              //  Thread.sleep(5000);
+                s = HttpClientOp.doGet("https://www.ppkao.com/shiti/9052048/");
             } catch (Exception e) {
                 e.printStackTrace();
             }
