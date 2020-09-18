@@ -17,7 +17,7 @@
     	[]: 通配括号内的某1个字符
 
 
-### Redis的哨兵和cluster架构的区别?
+### 3.Redis的哨兵和cluster架构的区别?
     哨兵是:集群监控,负责监控redis master和slave 进程是否正常工作
          消息通知:如果某个redis的实例有故障,那么哨兵负责发送消息作为报警通知给管理员
           故障转移:如果master的node挂掉了,会自动转移到slave node 上
