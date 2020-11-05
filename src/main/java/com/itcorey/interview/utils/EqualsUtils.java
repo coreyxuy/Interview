@@ -1,5 +1,7 @@
 package com.itcorey.interview.utils;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -9,6 +11,8 @@ import java.util.Objects;
  */
 public class EqualsUtils {
     public static void main(String[] args) {
+        Map<String,Objects> map = new HashMap<>();
+
 
         for (int x=0,y=0;(y!=0)&&(x<4);x++){
             System.out.println("1111111");

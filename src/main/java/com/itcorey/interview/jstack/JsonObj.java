@@ -6,5 +6,9 @@ package com.itcorey.interview.jstack;
  * @Description:
  */
 public class JsonObj {
+    public static void main(String[] args) {
+
+
+    }
     
 }

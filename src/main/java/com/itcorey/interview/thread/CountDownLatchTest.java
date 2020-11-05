@@ -1,6 +1,5 @@
 package com.itcorey.interview.thread;
 
-import javax.xml.stream.XMLOutputFactory;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -39,6 +38,8 @@ public class CountDownLatchTest {
                 System.out.println("B 上完厕所了。。。");
             }
         });
+
+
         executorService.submit(() -> {
             System.out.println("C 在打王者。。。");
             try {
